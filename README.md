@@ -1,7 +1,5 @@
 # HW6 Kaggle 50 Startups Profit Prediction
 
-![HW6 Report Preview](image.png)
-
 ## 專案簡介
 
 本專案使用 Kaggle 50 Startups 資料集，依照 CRISP-DM 流程建立企業獲利預測模型，並透過 Multiple Linear Regression 與特徵選擇方法分析企業獲利的主要驅動因子。
