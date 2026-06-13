@@ -1,0 +1,12 @@
+==========================================================================================
+                       Model Comparison Report (CRISP-DM Modeling)
+==========================================================================================
+
+                                    Model Name                                                      Features  Num Features          MSE        RMSE         MAE  R-squared  Adjusted R-squared
+                               1 Feature (R&D)                                                     R&D Spend             1 5.951096e+07 7714.334891 6077.363301   0.926511            0.917325
+                  2 Features (R&D + Marketing)                                    R&D Spend, Marketing Spend             2 6.734383e+07 8206.328813 6469.181721   0.916838            0.893078
+             3 Features (R&D + Marketing + NY)                          R&D Spend, Marketing Spend, New York             3 6.794347e+07 8242.782649 6430.578357   0.916098            0.874146
+        4 Features (R&D + Marketing + NY + FL)                 R&D Spend, Marketing Spend, New York, Florida             4 6.813985e+07 8254.686589 6454.510107   0.915855            0.848539
+5 Features (R&D + Marketing + NY + FL + Admin) R&D Spend, Marketing Spend, New York, Florida, Administration             5 8.201036e+07 9055.957323 6961.477813   0.898727            0.772135
+
+==========================================================================================

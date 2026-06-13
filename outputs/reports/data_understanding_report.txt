@@ -1,0 +1,58 @@
+============================================================
+          CRISP-DM Data Understanding Report
+============================================================
+
+1. Dataset Shape:
+   - Number of rows: 50
+   - Number of columns: 5
+
+2. Column Names:
+   - R&D Spend, Administration, Marketing Spend, State, Profit
+
+3. Data Types:
+   - R&D Spend: float64
+   - Administration: float64
+   - Marketing Spend: float64
+   - State: str
+   - Profit: float64
+
+4. First 5 Rows:
+   R&D Spend  Administration  Marketing Spend       State     Profit
+0  165349.20       136897.80        471784.10    New York  192261.83
+1  162597.70       151377.59        443898.53  California  191792.06
+2  153441.51       101145.55        407934.54     Florida  191050.39
+3  144372.41       118671.85        383199.62    New York  182901.99
+4  142107.34        91391.77        366168.42     Florida  166187.94
+
+5. Descriptive Statistics:
+            R&D Spend  Administration  Marketing Spend     State         Profit
+count       50.000000       50.000000        50.000000        50      50.000000
+unique            NaN             NaN              NaN         3            NaN
+top               NaN             NaN              NaN  New York            NaN
+freq              NaN             NaN              NaN        17            NaN
+mean     73721.615600   121344.639600    211025.097800       NaN  112012.639200
+std      45902.256482    28017.802755    122290.310726       NaN   40306.180338
+min          0.000000    51283.140000         0.000000       NaN   14681.400000
+25%      39936.370000   103730.875000    129300.132500       NaN   90138.902500
+50%      73051.080000   122699.795000    212716.240000       NaN  107978.190000
+75%     101602.800000   144842.180000    299469.085000       NaN  139765.977500
+max     165349.200000   182645.560000    471784.100000       NaN  192261.830000
+
+6. Missing Values Check:
+   - R&D Spend: 0 missing value(s)
+   - Administration: 0 missing value(s)
+   - Marketing Spend: 0 missing value(s)
+   - State: 0 missing value(s)
+   - Profit: 0 missing value(s)
+
+7. Duplicate Rows Check:
+   - Number of duplicate rows: 0
+
+8. Correlation Analysis (Numeric columns):
+                 R&D Spend  Administration  Marketing Spend    Profit
+R&D Spend         1.000000        0.241955         0.724248  0.972900
+Administration    0.241955        1.000000        -0.032154  0.200717
+Marketing Spend   0.724248       -0.032154         1.000000  0.747766
+Profit            0.972900        0.200717         0.747766  1.000000
+
+============================================================

@@ -1,0 +1,6 @@
+Feature,SFS Forward,RFE,SelectKBest,Lasso,Random Forest,Average Rank
+R&D Spend,1,3,1,1,1,1.4
+Marketing Spend,2,5,2,2,2,2.6
+Florida,4,2,4,4,4,3.6
+Administration,3,4,5,3,3,3.6
+New York,5,1,3,5,5,3.8
