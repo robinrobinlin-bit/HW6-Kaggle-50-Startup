@@ -1,0 +1,77 @@
+<mxfile host="Electron" modified="2026-06-14T05:51:53Z" agent="Antigravity" version="20.0" type="device">
+  <diagram id="crisp-dm-workflow" name="CRISP-DM Workflow">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Background Title Card -->
+        <mxCell id="title" value="Kaggle 50 Startups Profit Prediction: CRISP-DM Workflow" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#00F5D4;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="20" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 1. Business Understanding -->
+        <mxCell id="bu" value="&lt;b&gt;1. Business Understanding&lt;/b&gt;&lt;br/&gt;- Goal: Predict Startup Profit&lt;br/&gt;- Identify features X &amp; target y&lt;br/&gt;- Model: Multiple Linear Regression" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B263B;strokeColor=#00B4D8;fontColor=#E0E1DD;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 2. Data Understanding -->
+        <mxCell id="du" value="&lt;b&gt;2. Data Understanding&lt;/b&gt;&lt;br/&gt;- Read 50_Startups.csv&lt;br/&gt;- Check nulls &amp; duplicates&lt;br/&gt;- Analyze correlations&lt;br/&gt;- Output understanding report" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B263B;strokeColor=#00B4D8;fontColor=#E0E1DD;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="230" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 3. Data Preparation -->
+        <mxCell id="dp" value="&lt;b&gt;3. Data Preparation&lt;/b&gt;&lt;br/&gt;- State One-Hot Encoding&lt;br/&gt;- Avoid Dummy Trap (Drop CA baseline)&lt;br/&gt;- Split dataset (80/20 train/test)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B263B;strokeColor=#00B4D8;fontColor=#E0E1DD;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="380" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 4. Modeling -->
+        <mxCell id="md" value="&lt;b&gt;4. Modeling&lt;/b&gt;&lt;br/&gt;- Fit sklearn LinearRegression&lt;br/&gt;- Compare 5 feature subsets&lt;br/&gt;- Compute RMSE &amp; Adjusted R2&lt;br/&gt;- Output model_comparison files" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B263B;strokeColor=#00B4D8;fontColor=#E0E1DD;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="380" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 5. Evaluation -->
+        <mxCell id="ev" value="&lt;b&gt;5. Evaluation &amp; Diagnostics&lt;/b&gt;&lt;br/&gt;- Run 5 Feature Selection methods&lt;br/&gt;- Select best model (2-features)&lt;br/&gt;- Check residuals (Homoscedasticity)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B263B;strokeColor=#00B4D8;fontColor=#E0E1DD;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="230" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 6. Deployment -->
+        <mxCell id="de" value="&lt;b&gt;6. Deployment &amp; Storage&lt;/b&gt;&lt;br/&gt;- Save startup_profit_model_v2.pkl&lt;br/&gt;- Deploy interactive Streamlit App&lt;br/&gt;- Generate illustrated PDF booklet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B263B;strokeColor=#00B4D8;fontColor=#E0E1DD;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="80" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Connection 1 -> 2 -->
+        <mxCell id="conn1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00F5D4;strokeWidth=2;fontColor=#E0E1DD;" edge="1" parent="1" source="bu" target="du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Connection 2 -> 3 -->
+        <mxCell id="conn2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00F5D4;strokeWidth=2;fontColor=#E0E1DD;" edge="1" parent="1" source="du" target="dp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Connection 3 -> 4 -->
+        <mxCell id="conn3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#00F5D4;strokeWidth=2;fontColor=#E0E1DD;" edge="1" parent="1" source="dp" target="md">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Connection 4 -> 5 -->
+        <mxCell id="conn4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#00F5D4;strokeWidth=2;fontColor=#E0E1DD;" edge="1" parent="1" source="md" target="ev">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Connection 5 -> 6 -->
+        <mxCell id="conn5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#00F5D4;strokeWidth=2;fontColor=#E0E1DD;" edge="1" parent="1" source="ev" target="de">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Connection 5 -> 1 (Feedback Loop) -->
+        <mxCell id="conn6" value="Feedback / Refine" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF007F;strokeWidth=2;fontColor=#FF007F;fontSize=10;" edge="1" parent="1" source="ev" target="bu">
+          <mxGeometry relative="1" as="geometry">
+            <Array points="340, 275; 340, 125" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

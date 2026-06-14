@@ -118,3 +118,5 @@ python run_project.py
 - `model_comparison.csv` 與 `model_comparison.txt`：5 組模型指標的詳細比對表格。
 - `feature_selection_ranking.csv`：5 種特徵選擇方法的特徵排名表格。
 - `feature_selection_summary.txt`：特徵重要性的詳細文字分析。
+- `startup_profit_prediction_handout.pdf`：自動彙整分析數據、特徵篩選結果、6 張技術分析圖表及 A4 知識圖卡的**圖文並茂講義 PDF 檔**。
+- `docs/crisp_dm_workflow.drawio`：可在 Draw.io (app.diagrams.net) 直接匯入並編輯/導出的完整 CRISP-DM 流程圖 XML 檔。

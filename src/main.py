@@ -9,6 +9,8 @@ from model_training import train_and_compare_models
 from feature_selection import perform_feature_selection
 from evaluation import evaluate_and_save_best_model
 from visualization import generate_plots
+from generate_pdf import build_pdf_handout
+
 
 def run_pipeline():
     """
@@ -50,10 +52,14 @@ def run_pipeline():
     best_predictions = trained_models[best_name]["predictions"]
     generate_plots(comparison_df, ranking_df, best_info, best_predictions, X_test, y_test, df_raw)
     
+    # 7. PDF Handout Compilation (圖文並茂講義 PDF 產生)
+    print("Generating illustrated PDF handout booklet...")
+    build_pdf_handout()
+    
     # Format features string for console print
     best_features_str = " + ".join(best_info["Features"])
     
-    # 7. Output summary terminal block
+    # 8. Output summary terminal block
     print("\n" + "="*60)
     print("HW6 50 Startups Profit Prediction Completed Successfully")
     print("="*60)
